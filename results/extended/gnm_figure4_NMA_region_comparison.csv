@@ -1,0 +1,7 @@
+source,sign,pixel_x,pixel_y,residue_x_approx,residue_y_approx,compared_residue_x,compared_residue_y,GNM_correlation,within_published_GNM_outer_contour,residue_uncertainty
+"GNM Figure 4 X marker, earlier NMA region",positive,288,485,17.252314814814813,33.50310559006211,17,34,0.3947129732220666,True,1
+"GNM Figure 4 X marker, earlier NMA region",positive,803,744,51.824074074074076,52.1639751552795,52,52,1.0000000000000002,True,1
+"GNM Figure 4 X marker, earlier NMA region",negative,402,200,24.90509259259259,12.968944099378882,25,13,-0.2088207457278983,True,1
+"GNM Figure 4 X marker, earlier NMA region",negative,760,210,48.9375,13.68944099378882,49,14,-0.21029722607437817,True,1
+"GNM Figure 4 X marker, earlier NMA region",negative,764,495,49.20601851851852,34.22360248447205,49,34,-0.17119476483516466,True,1
+"GNM Figure 4 X marker, earlier NMA region",negative,800,58,51.62268518518518,2.737888198757764,52,3,-0.021661294881972264,False,1

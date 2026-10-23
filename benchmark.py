@@ -141,10 +141,12 @@ def main():
     pred = np.array([r['scaled_model_B_A2'] for r in profile])
     peaks, _ = find_peaks(pred, prominence=8)
     write_csv(OUT / 'anm_profile_peaks.csv', [dict(residue=profile[i]['resseq'], scaled_B_A2=float(pred[i])) for i in peaks])
-    # Seven clearly visible solid-curve local maxima, manually transcribed from
+    # Six solid-curve local maxima, manually transcribed from
     # Figure 5's original raster. Calibration is fixed; no fit to our results.
     # Approximate figure data are not original author numerical arrays.
-    figure_pixels = [(426,445),(537,206),(658,160),(768,394),(869,372),(1087,190),(1238,349)]
+    # Correction: (658,160) is on the experimental dashed curve, not theory.
+    # Do not use it as evidence of a theoretical peak match.
+    figure_pixels = [(426,445),(537,206),(768,394),(869,372),(1087,190),(1238,349)]
     figure_comparison = []
     for px, py in figure_pixels:
         residue = 40 * (px-180.5)/(470.5-180.5)
@@ -168,9 +170,9 @@ def main():
                 [r['figure_B_A2_approx'] for r in figure_comparison],
                 xerr=1, yerr=1, fmt='o', markersize=4, color='#252525', label='Published theory peak landmarks (approx.)')
         ax.set(ylabel=r'B ($\AA^2$)')
-    axes[0].set_title(f"ANM: r={result['pearson_r']:.3f}; full range shows N-terminal discrepancy")
+    axes[0].set_title(f"ANM: r={result['pearson_r']:.3f}; full computed range")
     axes[0].legend(fontsize=7, loc='upper right')
-    axes[1].set(ylim=(0,90), xlabel='PDB residue number', title='Zoom to 0-90 A squared for comparison of internal peaks')
+    axes[1].set(ylim=(0,75), xlabel='PDB residue number', title='Published Figure 5 axis range; clipped values are not measured peaks')
     fig.savefig(OUT / 'anm_published_comparison.png', dpi=160)
     fig.savefig(OUT / 'anm_published_comparison.svg')
     plt.close(fig)

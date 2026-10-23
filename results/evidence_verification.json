@@ -1,0 +1,340 @@
+{
+  "passed": true,
+  "integrity_checks": [
+    {
+      "check": "main source enm.py",
+      "passed": true,
+      "detail": "d3a571caf4bc14b9559ccc0617bcc723e250d2b81d465bc95e841abde22277c2"
+    },
+    {
+      "check": "main source benchmark.py",
+      "passed": true,
+      "detail": "3da77757dd624f7b8f27e536ee43adb293792ff754998af851a7ec42c4330fcc"
+    },
+    {
+      "check": "main source config.json",
+      "passed": true,
+      "detail": "7fda3aaefdc59ac8db03425270995a028a9deb1591733dc43e14ca3f00ae7a83"
+    },
+    {
+      "check": "main input 1aba_A.csv",
+      "passed": true,
+      "detail": "fe09ac6e5a3fa168e88e24bc11de644cf0cf2fe0073adaf13611c09101b0e851"
+    },
+    {
+      "check": "main input 1aqb_A.csv",
+      "passed": true,
+      "detail": "c45744bbbbadacf3863ebed141177ed751c88d2ac16179d444749dc1d846674c"
+    },
+    {
+      "check": "main input 1atn_AD.csv",
+      "passed": true,
+      "detail": "9f0f7a03e5b217c8eab2f51efde48fb1c0b54996ac0f93e4e02c9424ebd94c86"
+    },
+    {
+      "check": "main input 1crn_A.csv",
+      "passed": true,
+      "detail": "4f3c8271ac7a76f62e6a7bbbafacc10242ef41c2b602d74b0aba97533028d489"
+    },
+    {
+      "check": "main input 1lts_C.csv",
+      "passed": true,
+      "detail": "6f084e8bb4e868374a9b764a30e7ba70b6f8a355c94156e45282cf68bbd89aa8"
+    },
+    {
+      "check": "main input 1omf_blank.csv",
+      "passed": true,
+      "detail": "3bb0d387b51ea5f58b78bc1c75c66990fd41597f5c24b4c7d035ed042923430c"
+    },
+    {
+      "check": "main input 1tho_A.csv",
+      "passed": true,
+      "detail": "a31bfd69a16a0f4cb1479f7c286c23723041756a5bb961d4a814257c619f8946"
+    },
+    {
+      "check": "main input 1ula_A.csv",
+      "passed": true,
+      "detail": "325f0248d4225d618b64fd3ae3b4eda2e4bb2f9d86bca375d79ff445fe8a7764"
+    },
+    {
+      "check": "main input 1vaa_B.csv",
+      "passed": true,
+      "detail": "f36634eb42461f1cb5b1f3d057fd5882065b011c9d8f0b479ecc80dae4ff56b6"
+    },
+    {
+      "check": "main input 2ccy_A.csv",
+      "passed": true,
+      "detail": "20f2cd29c881c9230f27c2b0d76027afe13c5fb2722426bce5e07f9971e84d9c"
+    },
+    {
+      "check": "main input 3lzm_A.csv",
+      "passed": true,
+      "detail": "ba026cddb8f254910cc75e2c3d984d9d1920a21c64784240f4d25241db7d3c9b"
+    },
+    {
+      "check": "main input 5pti_A.csv",
+      "passed": true,
+      "detail": "f790a64b2942d575ddb17bd45d99e688fd9ec7cd28f7879897eabbcb1b3988bb"
+    },
+    {
+      "check": "main input 5rsa_A.csv",
+      "passed": true,
+      "detail": "205156fb680d681999fcb8f517ca1dedccc87e57a1a586c5c6b84d8d88eca095"
+    },
+    {
+      "check": "extended source enm.py",
+      "passed": true,
+      "detail": "d3a571caf4bc14b9559ccc0617bcc723e250d2b81d465bc95e841abde22277c2"
+    },
+    {
+      "check": "extended source analysis_methods.py",
+      "passed": true,
+      "detail": "ef3c98676455dbfedcb492d5d915a78cb479db89821f023fa86723d699c0f95c"
+    },
+    {
+      "check": "extended source reproduce_figures.py",
+      "passed": true,
+      "detail": "f14cd8d8beebef8a2c6d50f317905e155b572745421fb760469e82ddd17de87f"
+    },
+    {
+      "check": "extended input data/ca/1aba_A.csv",
+      "passed": true,
+      "detail": "fe09ac6e5a3fa168e88e24bc11de644cf0cf2fe0073adaf13611c09101b0e851"
+    },
+    {
+      "check": "extended input data/ca/1aqb_A.csv",
+      "passed": true,
+      "detail": "c45744bbbbadacf3863ebed141177ed751c88d2ac16179d444749dc1d846674c"
+    },
+    {
+      "check": "extended input data/ca/1atn_AD.csv",
+      "passed": true,
+      "detail": "9f0f7a03e5b217c8eab2f51efde48fb1c0b54996ac0f93e4e02c9424ebd94c86"
+    },
+    {
+      "check": "extended input data/ca/1crn_A.csv",
+      "passed": true,
+      "detail": "4f3c8271ac7a76f62e6a7bbbafacc10242ef41c2b602d74b0aba97533028d489"
+    },
+    {
+      "check": "extended input data/ca/1lts_C.csv",
+      "passed": true,
+      "detail": "6f084e8bb4e868374a9b764a30e7ba70b6f8a355c94156e45282cf68bbd89aa8"
+    },
+    {
+      "check": "extended input data/ca/1omf_blank.csv",
+      "passed": true,
+      "detail": "3bb0d387b51ea5f58b78bc1c75c66990fd41597f5c24b4c7d035ed042923430c"
+    },
+    {
+      "check": "extended input data/ca/1tho_A.csv",
+      "passed": true,
+      "detail": "a31bfd69a16a0f4cb1479f7c286c23723041756a5bb961d4a814257c619f8946"
+    },
+    {
+      "check": "extended input data/ca/1ula_A.csv",
+      "passed": true,
+      "detail": "325f0248d4225d618b64fd3ae3b4eda2e4bb2f9d86bca375d79ff445fe8a7764"
+    },
+    {
+      "check": "extended input data/ca/1vaa_B.csv",
+      "passed": true,
+      "detail": "f36634eb42461f1cb5b1f3d057fd5882065b011c9d8f0b479ecc80dae4ff56b6"
+    },
+    {
+      "check": "extended input data/ca/2ccy_A.csv",
+      "passed": true,
+      "detail": "20f2cd29c881c9230f27c2b0d76027afe13c5fb2722426bce5e07f9971e84d9c"
+    },
+    {
+      "check": "extended input data/ca/3lzm_A.csv",
+      "passed": true,
+      "detail": "ba026cddb8f254910cc75e2c3d984d9d1920a21c64784240f4d25241db7d3c9b"
+    },
+    {
+      "check": "extended input data/ca/5pti_A.csv",
+      "passed": true,
+      "detail": "f790a64b2942d575ddb17bd45d99e688fd9ec7cd28f7879897eabbcb1b3988bb"
+    },
+    {
+      "check": "extended input data/ca/5rsa_A.csv",
+      "passed": true,
+      "detail": "205156fb680d681999fcb8f517ca1dedccc87e57a1a586c5c6b84d8d88eca095"
+    },
+    {
+      "check": "extended input data/supplementary/1aqb_loop_atoms.csv",
+      "passed": true,
+      "detail": "a76a000f44f6f82d02c9f676b35479f3bc8cf5c3be941ebaa0282db5ba5a88ff"
+    },
+    {
+      "check": "extended input data/supplementary/1aqb_retinol_atoms.csv",
+      "passed": true,
+      "detail": "5903305d930147d60cd94baf3dd4fa02edffa4633ad258bcf7ac23ef3dc64d67"
+    },
+    {
+      "check": "extended input data/supplementary/1qab_protein_atoms.csv",
+      "passed": true,
+      "detail": "b86329c68ff76d3cd7452b7daf3f178d9296ee34f3bfa2bffb23b0532119e23a"
+    },
+    {
+      "check": "independent ProDy comparisons",
+      "passed": true,
+      "detail": "18 expected cases; matched zero thresholds"
+    },
+    {
+      "check": "scientific test log",
+      "passed": true,
+      "detail": "13 checks; see test_log.txt"
+    },
+    {
+      "check": "full ANM covariance shape",
+      "passed": true,
+      "detail": "(525, 525)"
+    },
+    {
+      "check": "full ANM covariance finite/symmetric",
+      "passed": true,
+      "detail": "float64 unit covariance; thermal scale stored separately"
+    },
+    {
+      "check": "saved covariance reproduces primary B factors",
+      "passed": true,
+      "detail": "same 13 A primary network"
+    },
+    {
+      "check": "PNG integrity anm_figure2_displacements.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure3_force_constants.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure4_spectra.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure7_anisotropy.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure8_global_mode.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_structural_panels.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure10a_conformations.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity anm_figure10b_experimental_complex.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity gnm_figure4_correlations.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "PNG integrity gnm_figures5_6_connectivity.png",
+      "passed": true,
+      "detail": "all PNG chunk CRCs and final IEND checked"
+    },
+    {
+      "check": "complete spectra",
+      "passed": true,
+      "detail": "519 internal modes at each of 10/13/20/70 A"
+    },
+    {
+      "check": "complete exported mode vectors",
+      "passed": true,
+      "detail": "12 modes, 175 residues, 3 components"
+    },
+    {
+      "check": "corrected theory landmarks",
+      "passed": true,
+      "detail": "experimental peak at pixel (658,160) excluded"
+    },
+    {
+      "check": "spring-constant published points",
+      "passed": true,
+      "detail": "5 GNM and 7 ANM approximate source points"
+    }
+  ],
+  "verified_output_sha256": {
+    "results/1aba_A_gnm_profile.csv": "4101ec14754ee53852c025348bd504f6e3187eaead857fa318c33c53feb6622d",
+    "results/1aqb_A_anm_profile.csv": "dad22659785d3dfdceaf7da55a53563973dae6f7998cbe85bac252cbb3fc2083",
+    "results/1atn_AD_gnm_profile.csv": "ca0933abff01ad6cb544347a64bf7b652d6ff08b9376a468f77fbf50bdbbec20",
+    "results/1crn_A_gnm_profile.csv": "5bdf0df3d4e8630df8bec93228d28cd719dcf67b40587693549a025834bfdf9d",
+    "results/1lts_C_gnm_profile.csv": "cfe5ee6ab6353c6fd190f7bc2fc1605b2713e55c68eb29a0522d143c25213e8f",
+    "results/1omf_blank_gnm_profile.csv": "56c1e5e945781fcb21bddb5f254c94fc71ad10107b9afadb2b40e6661f3c499e",
+    "results/1tho_A_gnm_profile.csv": "5a6a4bfed9692c55bb3efe24c4c1e7198a8ca215085d6d420222b18646fec341",
+    "results/1ula_A_gnm_profile.csv": "9cc39f2ba5db46da046a5aabb96d20921ae7aaef931c32baba818a029a00ab8b",
+    "results/1vaa_B_gnm_profile.csv": "5c57c3af8354d2379680832826b7265d815d5d3e2858566785a8f3788f4d73f5",
+    "results/2ccy_A_gnm_profile.csv": "4c70de338d7ec1dac1fb28cef5d3d39fdac074f4bf2c0e01e13bc984b3c9b9e0",
+    "results/3lzm_A_gnm_profile.csv": "e97fea3a1be2be563afbbcfc1022246b6e6362ae7eb91cbb5c1a0a2f853ef08e",
+    "results/5pti_A_gnm_profile.csv": "36db3435ae8234a58e2cb49a27e7bbe376e98edd00208286db22465d82e23c5a",
+    "results/5rsa_A_gnm_profile.csv": "245217bddcf02347179c01046fcbbf5b6a2615423918ed0015e03f81c09b3156",
+    "results/anm_cutoff_diagnostics.csv": "ba09ddcd03357f05f11075b60ed8d6bf57250fccce2bf0ae15ce01b3d7183aee",
+    "results/anm_profile_peaks.csv": "0f4f885b1edbdfaf06bd6fff0959325a7a270fbe530506d8113e2e8b84deeaa8",
+    "results/anm_published_comparison.png": "1c6a315d9a34db630353960e3c5116fe8ca3035dc5a933a1da8ab1d34bad0e1f",
+    "results/anm_published_comparison.svg": "e53e4b60ff9cbf2e62bbae5f9291e9f5880392e23917e794bb733242d6f0e0cc",
+    "results/anm_published_figure5_landmarks.csv": "040a24f43bab85081fd4119e4c9728ab71df13ecbf72cf740206807eb163051a",
+    "results/anm_slow_mode_audit.json": "9eae79715fde663996e3cc17e8f2f29e57b0efeb8993f3da1208a4f965e7a3bb",
+    "results/benchmark_log.txt": "dcfcd7d211a07194b36b7c9aaf81b203616fcfaa62d9b116261f90db5de328f9",
+    "results/data_audit.csv": "6d4394a9b7a8d30424a6ffef537e3c6c3263eca37e6b37d6f57edaf8a71f2626",
+    "results/extended/1aqb_anm_covariance.npz": "ff06f35d845aac3a78ebe3336f886511b491bd24573af2ad4ac8d1fa918a609d",
+    "results/extended/1qab_RBP_TTR_heavy_atom_interface.csv": "669ccd2e999d84168620b71392be7c18b18f47ba7ff0e12c2b9d337db2bf657b",
+    "results/extended/5pti_correlation_pairs.csv": "ee392264dc388325667962019e1378c20b1ead996921a8d31dd64a71388550b5",
+    "results/extended/5pti_gnm_covariance.npz": "8cf577b20b5e902878a2f1d79faf8cc96580247ba2b0da26300f90cc222a5c16",
+    "results/extended/anm_12_to_15_cutoff_profile_comparisons.csv": "116d1223f4c8650a0e72be57d676180a94f5ded414bf594a60a4baed6ecc2554",
+    "results/extended/anm_all_frequencies.csv": "22b1d1a4eb921d49cda5c4705a2b35cf55dea7058629897c8eba4f74a02f42c4",
+    "results/extended/anm_claim_comparisons.json": "002f925f2c383590d232af07c26cd7ee5d257152a53a5d9a6981ec33c68c281a",
+    "results/extended/anm_equilibrium_operator_check.csv": "eefd928ba79cfd8c11fbe683578fd4cab9cc7d800be98455877dddf990dad2de",
+    "results/extended/anm_figure10a_conformations.csv": "65173f6c30a5da53fc0d0e6b53ad30c62bc8206b671bdd11ef7879472d8a05e3",
+    "results/extended/anm_figure10a_conformations.png": "44308d6335fef86f78fdce136caaa128e856c7d85dd023cd0ccbb26ac6a43781",
+    "results/extended/anm_figure10b_experimental_complex.png": "32175ef3eb9bb03a33e06246bfffbfc0915cd985e7cb7379f75d892042ffa909",
+    "results/extended/anm_figure2_contact_displacement.csv": "d8ec1a43f626e3e2f7beebc84cf44d6a3da977e9750edc277e75e92e899f07b1",
+    "results/extended/anm_figure2_displacements.png": "d96e670832d9c97f487526bf741f554f8e118cf822bd6968951b6a45967ab29a",
+    "results/extended/anm_figure3_digitized_comparison.csv": "2c4d1b926fb97df233b8b977c1975d57f2d2e98fcf4bc5937073d79d1d84f306",
+    "results/extended/anm_figure3_force_constants.png": "716eb9d570d3a0f8c85aa2a0898a3cda07b708bb51e52d5bf25b5fed46a160b5",
+    "results/extended/anm_figure4_spectra.png": "ad6ac7971768f40627269fbebf8a826f9b70968a2be49479542ff6a6e7496403",
+    "results/extended/anm_figure7_anisotropy.png": "0d3c2f96f29c57f8aa260118e677c12b52fe9fdd1a92992153826627c254b5af",
+    "results/extended/anm_figure7_directional_variances.csv": "7c61146e763dd0b4d95662631b4bf542427b656bd8c3e1ee16d8f02f9c742472",
+    "results/extended/anm_figure8_global_mode.png": "44cd73a8e9b599d84aca6d5ae9fd34af1596e7fa51692b35762b6148aab71d86",
+    "results/extended/anm_first12_mode_vectors.csv": "fc78ad732980a1d54bc5642c4036e11f43b064bdffd1d1129fd0909df597e837",
+    "results/extended/anm_mode_amplitude_comparison.csv": "84486302181b5abc8c373b80eeaf378913c86d3d2dde2326d910ffb059e65a00",
+    "results/extended/anm_spectra_summary.csv": "94a1707a5de70a3a448d3aa449d1ac48d90c46a1c524c1949607982b76732316",
+    "results/extended/anm_structural_panels.png": "a7304bacb2fc34d8a2a0821ac18c08b6149454804dff22ca3c9954a762fd4277",
+    "results/extended/force_constant_cutoff_sweep.csv": "8d0313f134503514d570432bf6be8195233c5d82cfd83479809aa8cb9aa1e765",
+    "results/extended/gnm_chain_components.csv": "88476a61525e23306cb47c9358f9bdd4c422a089e8d5081af34705fc234cd727",
+    "results/extended/gnm_figure4_NMA_region_comparison.csv": "d4e2b8c215b9e7843f9f72234bc9f4a879ee64a4efdd8a00527b76c1be0639de",
+    "results/extended/gnm_figure4_correlations.png": "06a3cc2b822e3326c75a70e78cd18a3f6fbf466e875fccfe7e4d85cb61ab08b1",
+    "results/extended/gnm_figures5_6_connectivity.png": "daa3fe102172e7a653a9d4b0ea6dbd3b7b8018530062f99c1d47f9a0bec5939a",
+    "results/extended/gnm_text_claims.csv": "2abb07d867a5303900b3143254353386111f73039ea60b12bc51555bba872c5f",
+    "results/extended/historical_input_sensitivity.csv": "47de547faeabbce69228b3cfcb49d64fc6650d8bbe586e8103ca42e005a5e718",
+    "results/extended/principal_frame.json": "92407f39f15f4706870ce592e14c4d667cb4df109d4869574e377961411cfdf2",
+    "results/extended/run_manifest.json": "7b3db011e479ec95f0a05f98d2636afd1303aea88b8974e06b8e715c594767b2",
+    "results/extended_log.txt": "4ab8002301d06b9029b74f3cb7a8efed4fbfaeeff34292f093bcd4c577c4d1d7",
+    "results/gnm_benchmark.csv": "dc7996c3a7c8c1f9c75adeed60f51fd04758057b79aada9cd10c80aa9601df68",
+    "results/gnm_profiles.png": "6e10cb9b506a85f87cdaf5373584e820f02db8e8ecc0cca195fbc7f8c1299eea",
+    "results/gnm_profiles.svg": "fa8c6e44e4b6071a6c53d5b1b3ffe554268b3957079c812e01a40b91e4e20b09",
+    "results/prody_validation.csv": "ccabd07d106abdacc4bc65cf65e332c7ece4e073e0022dddd70beeb68bb2b3dc",
+    "results/prody_validation_initial_threshold_audit.csv": "19bfa1af52f459999936368c6c3db52e0ba5c63b4bf3bfbbee03399f8b7749d8",
+    "results/published_result_status.csv": "7b610c2b5b3c1991aacb9032d312e759808addf05196b719b4ab629399ab4105",
+    "results/run_manifest.json": "b2777db10dde0ca362901ce588072e7f99d2d5573943338161bff58e83d38a7e",
+    "results/test_log.txt": "a440d2a593eac28bd34a229de45c36e84d6686bad7fd9da52bd56d34fa04c41e"
+  },
+  "publication_equivalence": "Not established; see published_result_status.csv and docs/figure_coverage.md"
+}

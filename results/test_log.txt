@@ -1,3 +1,8 @@
+test_boundary_interpretations_are_distinct (test_analyses.AdditionalScientificChecks.test_boundary_interpretations_are_distinct) ... ok
+test_correlation_normalization_and_thermal_calibration (test_analyses.AdditionalScientificChecks.test_correlation_normalization_and_thermal_calibration) ... ok
+test_equilibrium_operator_independent_hessian (test_analyses.AdditionalScientificChecks.test_equilibrium_operator_independent_hessian) ... ok
+test_free_chain_analytic_covariance (test_analyses.AdditionalScientificChecks.test_free_chain_analytic_covariance) ... ok
+test_principal_axes_and_directional_trace (test_analyses.AdditionalScientificChecks.test_principal_axes_and_directional_trace) ... ok
 test_anm_six_rigid_body_zeros (test_enm.ScientificChecks.test_anm_six_rigid_body_zeros) ... ok
 test_covariances_against_independent_pinv (test_enm.ScientificChecks.test_covariances_against_independent_pinv) ... ok
 test_disconnected_network_zeros_are_visible (test_enm.ScientificChecks.test_disconnected_network_zeros_are_visible) ... ok
@@ -8,6 +13,6 @@ test_rigid_translation_invariance (test_enm.ScientificChecks.test_rigid_translat
 test_rotation_covariance (test_enm.ScientificChecks.test_rotation_covariance) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.018s
+Ran 13 tests in 0.016s
 
 OK

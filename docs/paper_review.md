@@ -44,7 +44,7 @@ modeled. Backbone neighbors enter through the same spatial contact rule.
 normalization parameters. Figures 1-3 compare predicted and experimental
 C-alpha B-factor profiles; the authors normalize their theoretical curves to
 the experimental areas. Figure 4 examines 5PTI fluctuation cross-correlations
-against earlier detailed normal-mode analysis, and Figures 5-7 examine chain
+against earlier detailed normal-mode analysis, and Figures 5-6 examine chain
 connectivity. The final discussion gives timing examples on the original
 workstation. Our local time measurements are not a hardware-matched replication
 of those historical speed claims. The paper does not supply a per-protein
@@ -52,8 +52,9 @@ Pearson-r table to which our new r values can be equated.
 
 **Implemented scope.** Original 12 entries, prescribed chain selections,
 7 A contacts, full nonzero eigenspectrum, and per-residue B factors; all used
-coordinates and B factors are bundled. Full published cross-correlation and
-chain-connectivity figure reproduction has not been completed.
+coordinates and B factors are bundled. Cross-correlation maps and both
+chain-connectivity examples are now executed. See the figure ledger for the
+boundary-convention ambiguity and limits on historical equivalence.
 
 ## Paper 2: ANM
 
@@ -94,9 +95,12 @@ tail-dominated and use the second mode to discuss the global motion.
 
 **Implemented scope.** Primary 13 A network and full covariance; diagnostics
 at 7,10,12,15,20 A; six-zero-mode check; experimental B-factor comparison;
-seven approximate theoretical peak landmarks from Figure 5; first five mode
-amplitude summaries. Full anisotropic Figure 7 and signed/principal-axis
-Figure 8-10 reproductions and their supporting MD comparisons remain undone.
+six vetted approximate theoretical peak landmarks from Figure 5; first twelve
+mode vectors; spring-constant comparison; full spectra; principal-axis
+anisotropy and mode components; structural loop/ligand views; displaced
+conformations and the cited experimental complex. These analyses now run
+offline. The ledger distinguishes their measured agreements from unresolved
+historical mode/profile differences and unavailable external MD trajectories.
 
 ## Questions to answer without relying on generated summaries
 

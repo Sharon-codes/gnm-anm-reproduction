@@ -7,7 +7,7 @@ is fully supported by the present checks.
 
 ## Implementation verification
 
-Eight tests passed: GNM graph/nullspace, ANM six rigid-body zeros on a rigid
+Thirteen tests passed, including five added analysis checks (analytic chain covariance, boundary conditions, equilibrium-operator Hessian, principal-axis trace conservation, and correlation/thermal calibration). The original eight cover: GNM graph/nullspace, ANM six rigid-body zeros on a rigid
 test network, covariance versus an independent pseudoinverse, Hessian energy
 curvature from finite differences, translation invariance, rotational
 equivariance, explicit disconnected-network zero counts, and invalid-input
@@ -86,71 +86,78 @@ claiming the original absolute curves were reproduced.
 
 ## ANM: original 1AQB at 13 A
 
-175 observed residues give 519 internal modes and six rigid-body zero modes.
-Pearson r against crystallographic B factors is **0.6578**, and the
-same-structure, mean-calibrated RMSE is recorded in the raw metrics table.
-The predicted N-terminal B factor is approximately 306 A^2 versus the
-experimental 76.66 A^2. The plot retains this large discrepancy in a full-range
-panel and uses a separately labeled zoom for internal-peak comparisons.
+175 resolved residues give 519 internal modes and six rigid-body zeros.
+Experimental B-factor Pearson r is **0.6578**. Six manually selected theoretical
+peak landmarks remain after correcting an earlier selection that belonged to
+the experimental curve. Five amplitudes differ by more than the approximate
+1 A² transcription uncertainty. No parameter was fitted to these landmarks.
+Their source pixels and calibration are in the CSV and code.
 
-Seven conspicuous theoretical local maxima were manually transcribed from the
-original Figure 5 raster, without using them to fit the model. The embedded
-image is 1494 by 850 pixels. Calibration used (x,y)=(180.5,741) for the origin,
-x=470.5 for residue 40, and y=22 for B=75 A^2. The image pixel is treated in its
-native coordinate system (downward y). One-residue and 1 A^2 error bars are
-conservative transcription estimates, not statistical confidence intervals.
-All picked pixels and calibrations are visible in the code/CSV; this small set
-is not a digitization of the entire published curve and cannot establish
-full-profile equivalence.
+The predicted N-terminal B factor is approximately 306 A² versus observed
+76.66 A². This is a model-versus-experiment discrepancy. The published graph
+clips at 75 A², so its axis limit cannot be interpreted as a published model
+peak or used to assert a model-versus-paper discrepancy. The revised plot
+shows both the full computed range and the original axis range.
 
-| Peak residue, approx. in paper | Approx. published B (A^2) | Reproduced peak residue | Reproduced B (A^2) |
-|---|---:|---:|---:|
-| 34 | 30.88 | 34 | 37.11 |
-| 49 | 55.81 | 49 | 75.56 |
-| 66 | 60.61 | 65 | 69.27 |
-| 81 | 36.20 | 81 | 56.36 |
-| 95 | 38.49 | 95 | 38.36 |
-| 125 | 57.48 | 125 | 77.74 |
-| 146 | 40.89 | 146 | 48.06 |
+## Additional analyses now executed
 
-Locations agree to within one residue, but six of seven amplitudes differ
-beyond the transcription estimates. Thus full quantitative Figure 5
-reproduction has **not** been established. This comparison uses the prescribed
-13 A run; no fit to the picked published amplitudes is made.
+GNM Figure 4 uses all original contour levels. Both approximate marked positive
+regions and three of four marked negative regions are reproduced at the outer
+contour level. Terminal anticorrelation is absent, as described in the paper.
+Separate off-diagonal helix and inter-strand means are positive (0.2943 and
+0.08319); an entire rectangular region's mean is not a contour maximum.
 
-**Slow modes also need reconciliation.** The first internal mode is dominated
-by residue 1, consistent with the described tail motion. In the current second
-mode, the largest amplitude is at residue 125; residues 65,66,126,95 are also
-among its top five. The paper emphasizes the 94-99 loop as the strongest
-global-mode displacement. Coordinate rotations and eigenvector sign changes
-cannot change which residue has the largest vector norm. The report therefore
-does not assert that the biological global-mode interpretation is reproduced.
+GNM Figures 5–6 now include full, nonbonded and chain-only networks for 1LTS C
+and 1OMF. The free Rouse path gives the stated U-shaped chain profile. The
+literal tridiagonal Eq.8 with endpoint diagonals 2 gives a central maximum;
+the stated circle-graph interpretation gives a flat profile. Shared scale and
+independent area calibration are both saved. This exposes the boundary and
+scaling choices rather than silently changing the formula to match a picture.
 
-| Diagnostic cutoff (A) | Zero count, 1e-8 convention | Pearson r |
-|---|---:|---:|
-| 7 | 8 | 0.0510 |
-| 10 | 6 | 0.6669 |
-| 12 | 6 | 0.7252 |
-| 13, primary | 6 | 0.6578 |
-| 15 | 6 | 0.7404 |
-| 20 | 6 | 0.7368 |
+All twelve visible ANM Figure 3 spring-constant points were digitized. Assuming
+300 K, five GNM points agree within 1.6%. The standard ANM mechanical scaling
+is approximately three times smaller than seven source points. A separately
+labeled threefold alternative agrees within 2.7%, within the approximate 4.65%
+digitization uncertainty. The 7 A point also requires the 1e-6 zero threshold.
+This is evidence of a scale-convention difference, not proof of an author error
+or proof of the original temperature/implementation choice.
 
-The 15 A diagnostic is not substituted for the paper's primary 13 A result.
-The sensitivity itself warrants checking implementation/preprocessing history.
-No claim of superiority or novelty follows from these correlations.
+Full spectra at 10,13,20 A and the caption's literal 70 A are saved. Units follow
+sqrt(gamma*lambda) with an explicitly assumed 300 K; mass/time conversion is
+unspecified, so they are not frequencies in Hz. Binning is documented as 25
+bins rather than claimed identical to unrecovered historical bin boundaries.
 
-## What remains before an extension
+Principal-axis variances, isotropy departures and RMS displacements reproduce
+the Figure 7 computations. Absolute anisotropy departure and RMS displacement
+correlate at 0.8593; contact count and RMS displacement correlate at -0.7649.
+All trace/isotropy identities pass. The full covariance and frame are saved.
 
-1. Review the literal GNM scale definition against its table/plots and obtain
-   clarification or historical inputs if possible. Do not infer an author error
-   from this reproduction alone.
-2. Reconcile the ANM Figure 5 amplitudes and second-mode ordering using a fully
-   documented protocol; compare the original author implementation if available.
-3. Complete the unattempted cross-correlation, anisotropy, and full slow-mode
-   figure comparisons if the project is approved for that scope.
-4. Freeze the accepted original baseline and define independent evaluation
-   structures before testing any changes. Retain negative and discrepant results.
+The first internal mode is tail-dominated. In the second mode, residue 125 has
+the greatest norm. Its residue-95/residue-65 amplitude ratio is **0.8207**,
+versus approximately **1.2794** (8.7/6.8) in Figure 10a. This ratio is invariant
+to uniform scaling and coordinate rotations; fitting a global spring constant
+cannot fix it. One-modal-RMS values are 0.5128 A at residue 65 and 0.4208 A at
+95 under the same-structure thermal calibration. Both one- and two-RMS spans
+are reported, without fitting to the source's absolute motion labels.
 
-The present evidence supports an independently checked implementation and an
-honest partial published-result reproduction. It does not support a new
-contribution claim or a declaration of complete historical replication.
+Actual loop/retinol atom coordinates support the two structural views. Figure
+10b context uses the cited human RBP–transthyretin structure 1QAB. The additional
+5 A heavy-atom interface summary is our explicit descriptive criterion, not an
+original paper score or a binding-affinity prediction. Pig/human numbering is
+not assumed equivalent.
+
+The 12–15 A cutoff profiles are similar but not indistinguishable here:
+pairwise profile correlations range from 0.9208 to 0.9804, and relative L2
+differences from 0.1456 to 0.3730. These diagnostics are not replacements for
+the prescribed 13 A primary result.
+
+## Interpretation
+
+All figure-related computational analyses now execute, with supporting tables,
+arrays and images. The exact historical 1997 constants, ANM profile amplitudes
+and second-mode ratio remain unreconciled. Historical original inputs/code or
+author output arrays are needed to decide between preprocessing and convention
+differences. The [coverage ledger](figure_coverage.md) records each limitation.
+The evidence supports the implementation and several published qualitative or
+convention-dependent numerical results; it does not support a declaration of
+complete exact historical equivalence or a new contribution.

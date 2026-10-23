@@ -1,0 +1,7 @@
+comparison,status,evidence
+GNM Table 1 normalization,unreconciled,results/gnm_benchmark.csv
+GNM Figure 4 marked correlation regions,"qualitative agreement, sparse location comparison",results/extended/gnm_figure4_NMA_region_comparison.csv
+ANM Figure 3 GNM scale,"within approximate digitization error, assuming 300 K",results/extended/anm_figure3_digitized_comparison.csv
+ANM Figure 3 standard ANM scale,disagrees; threefold alternative agrees under stated assumptions,results/extended/anm_figure3_digitized_comparison.csv
+ANM Figure 5 theory amplitudes,unreconciled; 5 of 6 landmarks differ beyond 1 A squared,results/anm_published_figure5_landmarks.csv
+ANM Figure 10a mode ratio,unreconciled: 0.8207 versus approximately 1.2794,results/extended/anm_mode_amplitude_comparison.csv

@@ -1,0 +1,13 @@
+GNM correlation, connectivity and input sensitivity complete
+Cutoff, spring-scale, digitization and spectra complete
+{
+  "rms_max_residue": 1,
+  "anisotropy_departure_max_residue": 1,
+  "anisotropy_RMS_pearson": 0.8593102118939724,
+  "contacts_RMS_pearson": -0.7649431042629121,
+  "mode2_residue95_over65": 0.820685474821349,
+  "published_figure10a_95_over65": 1.2794117647058822,
+  "mode2_largest_residue": 125,
+  "note": "Published absolute amplitudes 6.8/8.7 A have an unreported scaling convention. No fit to these values was performed."
+}
+All additional analysis stages executed; consult figure coverage for equivalence status.

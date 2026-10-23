@@ -1,0 +1,29 @@
+{
+  "run_utc": "2026-10-23T06:59:50.411380+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "command": "reproduce_figures.py",
+  "source_sha256": {
+    "enm.py": "d3a571caf4bc14b9559ccc0617bcc723e250d2b81d465bc95e841abde22277c2",
+    "analysis_methods.py": "ef3c98676455dbfedcb492d5d915a78cb479db89821f023fa86723d699c0f95c",
+    "reproduce_figures.py": "f14cd8d8beebef8a2c6d50f317905e155b572745421fb760469e82ddd17de87f"
+  },
+  "input_sha256": {
+    "data/ca/1aba_A.csv": "fe09ac6e5a3fa168e88e24bc11de644cf0cf2fe0073adaf13611c09101b0e851",
+    "data/ca/1aqb_A.csv": "c45744bbbbadacf3863ebed141177ed751c88d2ac16179d444749dc1d846674c",
+    "data/ca/1atn_AD.csv": "9f0f7a03e5b217c8eab2f51efde48fb1c0b54996ac0f93e4e02c9424ebd94c86",
+    "data/ca/1crn_A.csv": "4f3c8271ac7a76f62e6a7bbbafacc10242ef41c2b602d74b0aba97533028d489",
+    "data/ca/1lts_C.csv": "6f084e8bb4e868374a9b764a30e7ba70b6f8a355c94156e45282cf68bbd89aa8",
+    "data/ca/1omf_blank.csv": "3bb0d387b51ea5f58b78bc1c75c66990fd41597f5c24b4c7d035ed042923430c",
+    "data/ca/1tho_A.csv": "a31bfd69a16a0f4cb1479f7c286c23723041756a5bb961d4a814257c619f8946",
+    "data/ca/1ula_A.csv": "325f0248d4225d618b64fd3ae3b4eda2e4bb2f9d86bca375d79ff445fe8a7764",
+    "data/ca/1vaa_B.csv": "f36634eb42461f1cb5b1f3d057fd5882065b011c9d8f0b479ecc80dae4ff56b6",
+    "data/ca/2ccy_A.csv": "20f2cd29c881c9230f27c2b0d76027afe13c5fb2722426bce5e07f9971e84d9c",
+    "data/ca/3lzm_A.csv": "ba026cddb8f254910cc75e2c3d984d9d1920a21c64784240f4d25241db7d3c9b",
+    "data/ca/5pti_A.csv": "f790a64b2942d575ddb17bd45d99e688fd9ec7cd28f7879897eabbcb1b3988bb",
+    "data/ca/5rsa_A.csv": "205156fb680d681999fcb8f517ca1dedccc87e57a1a586c5c6b84d8d88eca095",
+    "data/supplementary/1aqb_loop_atoms.csv": "a76a000f44f6f82d02c9f676b35479f3bc8cf5c3be941ebaa0282db5ba5a88ff",
+    "data/supplementary/1aqb_retinol_atoms.csv": "5903305d930147d60cd94baf3dd4fa02edffa4633ad258bcf7ac23ef3dc64d67",
+    "data/supplementary/1qab_protein_atoms.csv": "b86329c68ff76d3cd7452b7daf3f178d9296ee34f3bfa2bffb23b0532119e23a"
+  }
+}

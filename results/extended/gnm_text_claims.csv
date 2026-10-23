@@ -1,0 +1,3 @@
+claim,measured,criterion,passed
+5PTI strands 16-24 / 29-35 positively correlated,0.08319213183506687,mean > 0,True
+5PTI helix 47-56 internally positively correlated,0.29432573575164217,off-diagonal mean > 0,True

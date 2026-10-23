@@ -112,5 +112,12 @@
     "chains": {
       "A": 175
     }
+  },
+  {
+    "pdb_id": "1qab",
+    "url": "https://files.rcsb.org/download/1QAB.pdb",
+    "sha256": "8bdf87971a6acb4382252ed5189472309d96f137753324bfe9047c0a10a87f89",
+    "downloaded_utc": "2026-10-23",
+    "purpose": "ANM Figure 10b experimental human RBP-transthyretin complex; structural context only"
   }
 ]

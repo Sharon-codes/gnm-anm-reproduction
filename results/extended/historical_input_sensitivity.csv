@@ -1,0 +1,3 @@
+case,input_policy,nodes,zeros,pearson_r,literal_fitted_gstar
+1tho_A,all resolved residues,109,1,0.4202278426471216,0.33060264451006993
+1tho_A,omit insertion 33A (diagnostic),108,1,0.4237793860626134,0.33353730450820995

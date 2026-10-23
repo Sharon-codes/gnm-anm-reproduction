@@ -1,55 +1,57 @@
-# GNM and ANM: independent reproduction and benchmark evidence
+# GNM and ANM: reproduction and benchmark evidence
 
-**Status: core numerical methods implemented and independently validated;
-exact reproduction of all published numerical/biological results is incomplete.**
-This is a learning and replication project. No new method, drug candidate,
-binding-affinity result, or scientific novelty is claimed.
+**All figure-related computational analyses are now implemented and executed.**
+Exact agreement with every historical published result is **not established**:
+remaining differences are measured in the [results ledger](docs/figure_coverage.md).
+No new method or scientific novelty is claimed.
 
-Two original papers are studied:
+| Original paper | Model and output |
+|---|---|
+| Bahar, Atilgan & Erman (1997), *Direct evaluation of thermal fluctuations in proteins using a single-parameter harmonic potential*, Folding & Design 2:173–181. [DOI](https://doi.org/10.1016/S1359-0278(97)00024-2) | GNM: residue flexibility and correlations from a C-alpha contact graph |
+| Atilgan et al. (2001), *Anisotropy of fluctuation dynamics of proteins with an elastic network model*, Biophysical Journal 80:505–515. [DOI](https://doi.org/10.1016/S0006-3495(01)76033-X) | ANM: directional fluctuations and collective modes from a 3D spring network |
 
-| Paper | Model | What it computes |
-|---|---|---|
-| Bahar, Atilgan & Erman (1997), *Direct evaluation of thermal fluctuations in proteins using a single-parameter harmonic potential*, Folding & Design 2:173-181. [DOI](https://doi.org/10.1016/S1359-0278(97)00024-2) | Gaussian Network Model (GNM) | Relative residue flexibility and correlated fluctuations from a C-alpha contact network |
-| Atilgan et al. (2001), *Anisotropy of fluctuation dynamics of proteins with an elastic network model*, Biophysical Journal 80:505-515. [DOI](https://doi.org/10.1016/S0006-3495(01)76033-X) | Anisotropic Network Model (ANM) | Directional fluctuations and collective modes from a 3D elastic network |
+See [equations, assumptions and original evaluation](docs/paper_review.md)
+and the [benchmark interpretation](docs/benchmark_report.md).
 
-These are foundational protein dynamics models that are small enough to
-implement, derive, and audit on a CPU. They are not sequence-to-structure AI
-models, and they do not reproduce the AlphaFold Evoformer. See
-[the methodological review](docs/paper_review.md) for equations, assumptions,
-original evaluation, and a study checklist.
+## Executed results
 
-## What actually ran
+- **13 scientific tests passed**, including analytic chain covariance, an
+  independent equilibrium-operator Hessian, directional trace conservation,
+  rigid-body invariance and finite-difference curvature.
+- **18/18 ProDy 2.6.1 comparisons passed**; maximum relative covariance
+  discrepancy is 7.74e-12 with matched eigenvalue thresholds.
+- GNM: all **12 original structures**, prescribed **7 A cutoff**, B-factor
+  profiles, 5PTI correlations, connectivity decomposition and boundary checks.
+- ANM: **1AQB at 13 A**, cutoff/force-constant sweeps, complete spectra,
+  principal-axis covariance, first 12 mode vectors, loops, ligand and displaced
+  conformations. Experimental **1QAB** supplies Figure 10b's structural context.
+- Fixed input tables, source hashes, covariance arrays, measurements, plots
+  and execution logs are committed alongside the code.
 
-- Independent NumPy/SciPy implementations, with **8 passing scientific tests**.
-- GNM on all **12 PDB entries** in the original paper at its **7 A cutoff**.
-- ANM on the original **1AQB** structure at its stated **13 A cutoff**, with five
-  additional diagnostic cutoffs kept separate from the primary result.
-- **18/18 comparisons against ProDy 2.6.1 passed** when the eigenvalue-zero
-  convention was matched. Maximum relative covariance discrepancy was
-  approximately **7.74e-12**. This verifies the implementation, not agreement
-  with every result in the papers.
-- Actual input tables, SHA256 provenance, per-residue predictions, raw run
-  logs, and numeric comparison tables are committed here.
+| Published comparison | Outcome |
+|---|---|
+| GNM B-factor profiles on 12 structures | Mean per-structure experimental Pearson r = **0.6304**; not a published score |
+| GNM Figure 4 correlation regions | Both marked positive regions and **3/4** marked negative regions fall inside the corresponding outer contours, consistent with the paper's qualitative result |
+| ANM Figure 3, GNM spring constants | Five approximate published points agree within **1.6%**, assuming 300 K |
+| ANM Figure 3, ANM spring constants | Seven points agree within **2.7%** under an explicit **threefold scale alternative**; standard mechanical scale differs by about a factor of three |
+| ANM Figure 5, prescribed 13 A | Experimental Pearson r = **0.6578**; six vetted theory landmarks show residual amplitude differences |
+| ANM Figure 10a, mode-2 residue-95/residue-65 amplitude ratio | **0.8207** here versus approximately **1.2794** in the figure; disagreement remains |
 
-| Evaluation on current resolved atoms | Result measured here | Published comparison status |
-|---|---:|---|
-| GNM: mean of 12 per-structure Pearson correlations with crystal B factors | 0.6304 | Original paper provides curves rather than a per-structure correlation table; the GNM normalization constants remain unreconciled |
-| GNM: 5PTI Pearson correlation | 0.8853 | Measured here; not a number quoted from the paper |
-| ANM: 1AQB Pearson correlation at 13 A | 0.6578 | Seven approximate published theoretical peak locations recovered within one residue; several amplitudes differ substantially |
+Spring-constant digitization uncertainty is about 4.65%. The 300 K temperature
+is an explicit assumption. A convention-dependent match does not establish the
+convention used by the authors. No parameters were optimized against those points.
 
-All absolute B-factor curves are rescaled using the same structure's observed
-B factors. This follows a calibration step in the papers and **does not establish
-held-out prediction of absolute amplitudes**. Pearson correlation is invariant
-to that global scale. No cutoff was selected to maximize the reported result.
+Absolute B factors use each structure's observed B-factor sum to calibrate one
+scale. This is **same-structure calibration**, not held-out amplitude prediction.
+Diagnostic cutoffs do not replace the prescribed primary results.
 
-![GNM on the 12 original PDB entries](results/gnm_profiles.png)
+![GNM correlations at the original contour levels](results/extended/gnm_figure4_correlations.png)
 
-![ANM compared with approximate published Figure 5 landmarks](results/anm_published_comparison.png)
+![Published spring constants and explicit scale alternatives](results/extended/anm_figure3_force_constants.png)
 
 ## Re-run offline
 
-Use Python 3.12. The selected C-alpha coordinate/B-factor tables are included;
-neither a GPU nor a PDB download is required for these commands.
+Use Python 3.12. Included input tables make downloads and GPUs unnecessary.
 
 ```bash
 python -m venv .venv
@@ -57,41 +59,39 @@ source .venv/bin/activate
 python -m pip install -r requirements-validation.txt
 OPENBLAS_NUM_THREADS=1 python -m unittest discover -s tests -v
 OPENBLAS_NUM_THREADS=1 python benchmark.py --validate-prody
+OPENBLAS_NUM_THREADS=1 python reproduce_figures.py
+python verify_evidence.py
 ```
 
-The script exits nonzero if any independent implementation comparison fails.
-Run it from this directory. It regenerates the numeric tables and figures.
-To re-download and re-parse the original PDB files, optionally run:
+`benchmark.py` exits nonzero on an implementation mismatch.
+`reproduce_figures.py` executes all additional analyses; runner completion does
+not declare publication equivalence. `verify_evidence.py` checks source/input
+hashes, expected outputs and recorded comparisons.
+
+Optional source download and parsing audit:
 
 ```bash
 python prepare_inputs.py
+python prepare_supplementary.py
 ```
 
-That command checks downloaded raw PDB SHA256 values against
-[`data/provenance.json`](data/provenance.json) and fails if an upstream file has
-changed. The bundled CA tables are the fixed inputs used for the committed run.
-Raw PDBs are excluded from Git to keep the project small. Original paper PDFs
-and private meeting notes are not redistributed.
+PDB hashes are checked against [provenance](data/provenance.json). Missing
+residues are not filled in. Raw PDBs and article PDFs are not redistributed.
+Parsed public coordinate tables support the offline workflow.
 
 ## Inspect the evidence
 
-- [Benchmark interpretation and unresolved differences](docs/benchmark_report.md)
-- [GNM raw metrics and published normalization constants](results/gnm_benchmark.csv)
-- [ANM primary and diagnostic cutoff metrics](results/anm_cutoff_diagnostics.csv)
-- [Approximate ANM published-figure comparison](results/anm_published_figure5_landmarks.csv)
-- [ProDy implementation comparisons](results/prody_validation.csv)
-- [Residue count audit](results/data_audit.csv)
-- [Test log](results/test_log.txt), [benchmark log](results/benchmark_log.txt), and [run manifest](results/run_manifest.json)
-- [Slow-mode audit](results/anm_slow_mode_audit.json)
+- [Every figure/table: result and remaining limits](docs/figure_coverage.md)
+- [Original profiles](results/gnm_profiles.png) and [GNM parameter table](results/gnm_benchmark.csv)
+- [Corrected ANM Figure 5 comparison](results/anm_published_comparison.png)
+- [Connectivity and chain-boundary audit](results/extended/gnm_figures5_6_connectivity.png)
+- [Spectra](results/extended/anm_figure4_spectra.png), [anisotropy](results/extended/anm_figure7_anisotropy.png) and [global mode](results/extended/anm_figure8_global_mode.png)
+- [Structures/loops/retinol](results/extended/anm_structural_panels.png), [mode conformations](results/extended/anm_figure10a_conformations.png) and [experimental complex](results/extended/anm_figure10b_experimental_complex.png)
+- [Full ANM covariance and first 12 modes](results/extended/1aqb_anm_covariance.npz)
+- [ProDy checks](results/prody_validation.csv), [tests](results/test_log.txt), [main log](results/benchmark_log.txt) and [additional log](results/extended_log.txt)
+- [Main manifest](results/run_manifest.json), [additional manifest](results/extended/run_manifest.json) and [evidence verification](results/evidence_verification.json)
 
-## Before proposing an improvement
-
-Resolve the GNM scale convention and the ANM amplitude/mode discrepancies;
-confirm the historical structure and preprocessing choices; then agree a fixed
-baseline protocol and held-out evaluation with a mentor. A higher correlation at
-a diagnostic cutoff does not by itself establish a contribution.
-
-Implementation and documentation were prepared with AI assistance and the
-recorded computations were executed. This repository does not certify that an
-individual has independently mastered the derivations or that a mentor has
-approved the project. The questions in the review are intended for that work.
+Open historical questions concern the 1997 normalization constants, exact
+original inputs, ANM amplitudes and second-mode displacement ratio. They require
+original numerical outputs or additional method details. All discrepant results
+are retained.
