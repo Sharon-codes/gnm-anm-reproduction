@@ -1,0 +1,10 @@
+{
+  "gnm-author": {
+    "sha256": "a50724ae9eeb3cf4e5ef7a852987d26614080be15a002be71df5f3c42f47a82b",
+    "bytes": 212726
+  },
+  "anm-correct": {
+    "sha256": "f058a93dc711ed541d11fe6fe18e2c8c55c8879b6b0119e701dd19e96117b03f",
+    "bytes": 483812
+  }
+}

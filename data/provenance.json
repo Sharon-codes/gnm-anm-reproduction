@@ -1,0 +1,116 @@
+[
+  {
+    "pdb_id": "1lts",
+    "url": "https://files.rcsb.org/download/1LTS.pdb",
+    "sha256": "27511293aca94d4b4f6ae1edd7716915e72f896fdb09472c70b2caacf498ce92",
+    "chains": {
+      "D": 103,
+      "E": 103,
+      "F": 103,
+      "G": 103,
+      "H": 103,
+      "A": 185,
+      "C": 41
+    }
+  },
+  {
+    "pdb_id": "1crn",
+    "url": "https://files.rcsb.org/download/1CRN.pdb",
+    "sha256": "42199a30a0701864a2a5cc76cd7f35cc544cd0e65fbcf63e03c166543249b811",
+    "chains": {
+      "A": 46
+    }
+  },
+  {
+    "pdb_id": "5pti",
+    "url": "https://files.rcsb.org/download/5PTI.pdb",
+    "sha256": "5f7c9d165cc405e709c5e5437864356dac55534ecb4cea07f3692f9f23845c20",
+    "chains": {
+      "A": 58
+    }
+  },
+  {
+    "pdb_id": "1aba",
+    "url": "https://files.rcsb.org/download/1ABA.pdb",
+    "sha256": "62d9de1b483f6913c89c507780043faceddfcaa583af427004745ad6a23bc15f",
+    "chains": {
+      "A": 87
+    }
+  },
+  {
+    "pdb_id": "1vaa",
+    "url": "https://files.rcsb.org/download/1VAA.pdb",
+    "sha256": "30085cddb3e8f31d223ad53b5e48a2dba5bc4ff3ed357f9e8cbcd7fffc5fbce9",
+    "chains": {
+      "A": 274,
+      "B": 99,
+      "P": 8
+    }
+  },
+  {
+    "pdb_id": "1tho",
+    "url": "https://files.rcsb.org/download/1THO.pdb",
+    "sha256": "0300080476206f71870b1de77dc5eb1f89d0853d46eafbc247593019c0c6aaba",
+    "chains": {
+      "A": 109
+    }
+  },
+  {
+    "pdb_id": "5rsa",
+    "url": "https://files.rcsb.org/download/5RSA.pdb",
+    "sha256": "be2095acc7239d9576af316053b0abd20d92dad613228828a5533666e7b8fa9c",
+    "chains": {
+      "A": 124
+    }
+  },
+  {
+    "pdb_id": "2ccy",
+    "url": "https://files.rcsb.org/download/2CCY.pdb",
+    "sha256": "3ba88eb63b94df86d74f77fe0e49d84f39f272060c74b887802f0abd75a0c0f0",
+    "chains": {
+      "A": 127,
+      "B": 127
+    }
+  },
+  {
+    "pdb_id": "3lzm",
+    "url": "https://files.rcsb.org/download/3LZM.pdb",
+    "sha256": "e531a3c16462ebdc0264ef084dd55f6f924bcde5568cb125efcbfaa89d912ab8",
+    "chains": {
+      "A": 164
+    }
+  },
+  {
+    "pdb_id": "1ula",
+    "url": "https://files.rcsb.org/download/1ULA.pdb",
+    "sha256": "533434f414bf673f46528cc567526cc51c4d0e004dbfc995f1508c54d1817df6",
+    "chains": {
+      "A": 289
+    }
+  },
+  {
+    "pdb_id": "1omf",
+    "url": "https://files.rcsb.org/download/1OMF.pdb",
+    "sha256": "a4ad1f30c6563b2db1157167e25c34a50c1a18491a33540deab82a2a705634a9",
+    "chains": {
+      " ": 340
+    }
+  },
+  {
+    "pdb_id": "1atn",
+    "url": "https://files.rcsb.org/download/1ATN.pdb",
+    "sha256": "99d47ab280ef87a269daaff1434891d4573268a331fca7ad098935d7b2590d58",
+    "chains": {
+      "A": 371,
+      "D": 258
+    }
+  },
+  {
+    "pdb_id": "1aqb",
+    "url": "https://files.rcsb.org/download/1AQB.pdb",
+    "sha256": "716c1db12e5999ac62511aa4a99ec86bccf7a8281c3b25caaef3566163322dad",
+    "chains": {
+      "A": 175
+    }
+  }
+]

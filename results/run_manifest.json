@@ -1,0 +1,33 @@
+{
+  "run_utc": "2026-10-23T06:03:46.220669+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "command": "benchmark.py --validate-prody",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "zero_eigenvalue_atol": 1e-08,
+  "prody_validation_requested": true,
+  "source_sha256": {
+    "enm.py": "d3a571caf4bc14b9559ccc0617bcc723e250d2b81d465bc95e841abde22277c2",
+    "benchmark.py": "e7481b0a9ecc64bca4fa97bf2125468329b2cd20f80c8e3b06df1b9e8391486f",
+    "config.json": "7fda3aaefdc59ac8db03425270995a028a9deb1591733dc43e14ca3f00ae7a83"
+  },
+  "input_sha256": {
+    "1aba_A.csv": "fe09ac6e5a3fa168e88e24bc11de644cf0cf2fe0073adaf13611c09101b0e851",
+    "1aqb_A.csv": "c45744bbbbadacf3863ebed141177ed751c88d2ac16179d444749dc1d846674c",
+    "1atn_AD.csv": "9f0f7a03e5b217c8eab2f51efde48fb1c0b54996ac0f93e4e02c9424ebd94c86",
+    "1crn_A.csv": "4f3c8271ac7a76f62e6a7bbbafacc10242ef41c2b602d74b0aba97533028d489",
+    "1lts_C.csv": "6f084e8bb4e868374a9b764a30e7ba70b6f8a355c94156e45282cf68bbd89aa8",
+    "1omf_blank.csv": "3bb0d387b51ea5f58b78bc1c75c66990fd41597f5c24b4c7d035ed042923430c",
+    "1tho_A.csv": "a31bfd69a16a0f4cb1479f7c286c23723041756a5bb961d4a814257c619f8946",
+    "1ula_A.csv": "325f0248d4225d618b64fd3ae3b4eda2e4bb2f9d86bca375d79ff445fe8a7764",
+    "1vaa_B.csv": "f36634eb42461f1cb5b1f3d057fd5882065b011c9d8f0b479ecc80dae4ff56b6",
+    "2ccy_A.csv": "20f2cd29c881c9230f27c2b0d76027afe13c5fb2722426bce5e07f9971e84d9c",
+    "3lzm_A.csv": "ba026cddb8f254910cc75e2c3d984d9d1920a21c64784240f4d25241db7d3c9b",
+    "5pti_A.csv": "f790a64b2942d575ddb17bd45d99e688fd9ec7cd28f7879897eabbcb1b3988bb",
+    "5rsa_A.csv": "205156fb680d681999fcb8f517ca1dedccc87e57a1a586c5c6b84d8d88eca095"
+  }
+}

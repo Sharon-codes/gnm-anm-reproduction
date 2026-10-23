@@ -1,0 +1,25 @@
+{
+  "gnm_cutoff_angstrom": 7.0,
+  "anm_primary_cutoff_angstrom": 13.0,
+  "anm_diagnostic_cutoffs_angstrom": [7.0, 10.0, 12.0, 13.0, 15.0, 20.0],
+  "zero_eigenvalue_absolute_tolerance": 1e-8,
+  "gnm_cases": [
+    {"id":"1lts_C","pdb":"1lts","network_chains":["C"],"evaluation_chain":"C","published_count":41,"published_network_count":41,"published_gstar":2.55},
+    {"id":"1crn_A","pdb":"1crn","network_chains":["A"],"evaluation_chain":"A","published_count":46,"published_network_count":46,"published_gstar":0.99},
+    {"id":"5pti_A","pdb":"5pti","network_chains":["A"],"evaluation_chain":"A","published_count":58,"published_network_count":58,"published_gstar":1.94},
+    {"id":"1aba_A","pdb":"1aba","network_chains":["A"],"evaluation_chain":"A","published_count":87,"published_network_count":87,"published_gstar":1.71},
+    {"id":"1vaa_B","pdb":"1vaa","network_chains":["B"],"evaluation_chain":"B","published_count":99,"published_network_count":99,"published_gstar":3.00},
+    {"id":"1tho_A","pdb":"1tho","network_chains":["A"],"evaluation_chain":"A","published_count":108,"published_network_count":108,"published_gstar":2.66},
+    {"id":"5rsa_A","pdb":"5rsa","network_chains":["A"],"evaluation_chain":"A","published_count":124,"published_network_count":124,"published_gstar":1.41},
+    {"id":"2ccy_A","pdb":"2ccy","network_chains":["A"],"evaluation_chain":"A","published_count":127,"published_network_count":127,"published_gstar":3.95},
+    {"id":"3lzm_A","pdb":"3lzm","network_chains":["A"],"evaluation_chain":"A","published_count":164,"published_network_count":164,"published_gstar":2.05},
+    {"id":"1ula_A","pdb":"1ula","network_chains":["A"],"evaluation_chain":"A","published_count":289,"published_network_count":289,"published_gstar":3.00},
+    {"id":"1omf_blank","pdb":"1omf","network_chains":[" "],"evaluation_chain":" ","published_count":340,"published_network_count":340,"published_gstar":3.91},
+    {"id":"1atn_AD","pdb":"1atn","network_chains":["A","D"],"evaluation_chain":"A","published_count":373,"published_network_count":633,"published_gstar":2.70}
+  ],
+  "anm_case":{"id":"1aqb_A","pdb":"1aqb","network_chains":["A"],"evaluation_chain":"A","published_count":183,"published_network_count":183},
+  "source_papers": [
+    {"model":"GNM","doi":"10.1016/S1359-0278(97)00024-2","url":"https://bahargroup.org/Faculty/bahar/publications/99.pdf"},
+    {"model":"ANM","doi":"10.1016/S0006-3495(01)76033-X","url":"https://bahargroup.org/Faculty/bahar/publications/143.pdf"}
+  ]
+}

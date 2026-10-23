@@ -1,0 +1,62 @@
+[
+  {
+    "nonzero_mode": 1,
+    "eigenvalue": 0.1415188587163362,
+    "maximum_amplitude_residue": 1,
+    "top_five_residues": [
+      1,
+      65,
+      125,
+      66,
+      67
+    ]
+  },
+  {
+    "nonzero_mode": 2,
+    "eigenvalue": 0.3932905539051795,
+    "maximum_amplitude_residue": 125,
+    "top_five_residues": [
+      125,
+      65,
+      66,
+      126,
+      95
+    ]
+  },
+  {
+    "nonzero_mode": 3,
+    "eigenvalue": 0.4998935323072557,
+    "maximum_amplitude_residue": 125,
+    "top_five_residues": [
+      125,
+      126,
+      124,
+      81,
+      49
+    ]
+  },
+  {
+    "nonzero_mode": 4,
+    "eigenvalue": 0.5686142460142567,
+    "maximum_amplitude_residue": 65,
+    "top_five_residues": [
+      65,
+      66,
+      67,
+      49,
+      125
+    ]
+  },
+  {
+    "nonzero_mode": 5,
+    "eigenvalue": 0.577522447389593,
+    "maximum_amplitude_residue": 65,
+    "top_five_residues": [
+      65,
+      66,
+      1,
+      125,
+      67
+    ]
+  }
+]

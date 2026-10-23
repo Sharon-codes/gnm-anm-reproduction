@@ -1,0 +1,13 @@
+test_anm_six_rigid_body_zeros (test_enm.ScientificChecks.test_anm_six_rigid_body_zeros) ... ok
+test_covariances_against_independent_pinv (test_enm.ScientificChecks.test_covariances_against_independent_pinv) ... ok
+test_disconnected_network_zeros_are_visible (test_enm.ScientificChecks.test_disconnected_network_zeros_are_visible) ... ok
+test_gnm_laplacian_and_single_zero (test_enm.ScientificChecks.test_gnm_laplacian_and_single_zero) ... ok
+test_hessian_energy_finite_difference (test_enm.ScientificChecks.test_hessian_energy_finite_difference) ... ok
+test_invalid_and_coincident_coordinates (test_enm.ScientificChecks.test_invalid_and_coincident_coordinates) ... ok
+test_rigid_translation_invariance (test_enm.ScientificChecks.test_rigid_translation_invariance) ... ok
+test_rotation_covariance (test_enm.ScientificChecks.test_rotation_covariance) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.018s
+
+OK

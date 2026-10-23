@@ -1,0 +1,4 @@
+-r requirements.txt
+ProDy==2.6.1
+biopython==1.88
+pyparsing==3.3.3
